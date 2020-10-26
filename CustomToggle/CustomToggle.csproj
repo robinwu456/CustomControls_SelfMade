@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{406F0A3E-63B5-4BB5-BF93-B494585AA6EA}</ProjectGuid>
+    <ProjectGuid>{200DD5BE-4EE7-4B95-8592-4817CA667D83}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomHScrollBar</RootNamespace>
-    <AssemblyName>CustomHScrollBar</AssemblyName>
+    <RootNamespace>CustomToggle</RootNamespace>
+    <AssemblyName>CustomToggle</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomHScrollBar.cs">
+    <Compile Include="CustomToggle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CustomHScrollBar.Designer.cs">
-      <DependentUpon>CustomHScrollBar.cs</DependentUpon>
+    <Compile Include="CustomToggle.Designer.cs">
+      <DependentUpon>CustomToggle.cs</DependentUpon>
     </Compile>
     <Compile Include="ImgSwitch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,34 +57,32 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CustomHScrollBar.resx">
-      <DependentUpon>CustomHScrollBar.cs</DependentUpon>
+    <EmbeddedResource Include="CustomToggle.resx">
+      <DependentUpon>CustomToggle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\scrollBar.png" />
+    <None Include="Resources\toggleOff.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarArrowLeft.png" />
+    <None Include="Resources\toggleOff_disable.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarArrowLeft_hover.png" />
+    <None Include="Resources\toggleOff_hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarArrowRight.png" />
+    <None Include="Resources\toggleOn.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarArrowRight_hover.png" />
+    <None Include="Resources\toggleOn_disable.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarThumb.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\scrollBarThumb_hover.png" />
+    <None Include="Resources\toggleOn_hover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

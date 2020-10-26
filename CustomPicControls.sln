@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomHScrollBar", "CustomHScrollBar\CustomHScrollBar.csproj", "{406F0A3E-63B5-4BB5-BF93-B494585AA6EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomToggle", "CustomToggle\CustomToggle.csproj", "{200DD5BE-4EE7-4B95-8592-4817CA667D83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomButton", "CustomButton\CustomButton.csproj", "{CB809B8B-C892-4730-A859-23FB40E068F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestControls", "TestControls\TestControls.csproj", "{CA88CA69-3AEA-4110-918E-D825DE34BA16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomPicButton", "CustomPicButton\CustomPicButton.csproj", "{4AACA480-7212-424C-975F-B6BC70C8100D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{406F0A3E-63B5-4BB5-BF93-B494585AA6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406F0A3E-63B5-4BB5-BF93-B494585AA6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406F0A3E-63B5-4BB5-BF93-B494585AA6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406F0A3E-63B5-4BB5-BF93-B494585AA6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{200DD5BE-4EE7-4B95-8592-4817CA667D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{200DD5BE-4EE7-4B95-8592-4817CA667D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{200DD5BE-4EE7-4B95-8592-4817CA667D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{200DD5BE-4EE7-4B95-8592-4817CA667D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB809B8B-C892-4730-A859-23FB40E068F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB809B8B-C892-4730-A859-23FB40E068F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB809B8B-C892-4730-A859-23FB40E068F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB809B8B-C892-4730-A859-23FB40E068F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA88CA69-3AEA-4110-918E-D825DE34BA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA88CA69-3AEA-4110-918E-D825DE34BA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA88CA69-3AEA-4110-918E-D825DE34BA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA88CA69-3AEA-4110-918E-D825DE34BA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AACA480-7212-424C-975F-B6BC70C8100D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AACA480-7212-424C-975F-B6BC70C8100D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AACA480-7212-424C-975F-B6BC70C8100D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AACA480-7212-424C-975F-B6BC70C8100D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B46237F-E309-4BF3-A9C6-BFCD40E0E2E8}
+	EndGlobalSection
+EndGlobal

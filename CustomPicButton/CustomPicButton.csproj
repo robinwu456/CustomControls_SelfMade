@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{406F0A3E-63B5-4BB5-BF93-B494585AA6EA}</ProjectGuid>
+    <ProjectGuid>{4AACA480-7212-424C-975F-B6BC70C8100D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomHScrollBar</RootNamespace>
-    <AssemblyName>CustomHScrollBar</AssemblyName>
+    <RootNamespace>CustomPicButton</RootNamespace>
+    <AssemblyName>CustomPicButton</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomHScrollBar.cs">
+    <Compile Include="CustomPicButton.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CustomHScrollBar.Designer.cs">
-      <DependentUpon>CustomHScrollBar.cs</DependentUpon>
+    <Compile Include="CustomPicButton.Designer.cs">
+      <DependentUpon>CustomPicButton.cs</DependentUpon>
     </Compile>
     <Compile Include="ImgSwitch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,8 +57,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CustomHScrollBar.resx">
-      <DependentUpon>CustomHScrollBar.cs</DependentUpon>
+    <EmbeddedResource Include="CustomPicButton.resx">
+      <DependentUpon>CustomPicButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,25 +66,25 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBar.png" />
+    <None Include="Resources\確定.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarArrowLeft.png" />
+    <None Include="Resources\確定1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarArrowLeft_hover.png" />
+    <None Include="Resources\確定2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarArrowRight.png" />
+    <None Include="Resources\TB_點回寫.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarArrowRight_hover.png" />
+    <None Include="Resources\TB_點回寫1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarThumb.png" />
+    <None Include="Resources\TB_點回寫2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\scrollBarThumb_hover.png" />
+    <None Include="Resources\TB_點回寫3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
