@@ -48,6 +48,8 @@
     <Compile Include="CustomPicButton.Designer.cs">
       <DependentUpon>CustomPicButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImgInfo.cs" />
+    <Compile Include="ImgInfoTypeConverter.cs" />
     <Compile Include="ImgSwitch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

@@ -63,6 +63,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,6 +80,16 @@
       <Project>{CB809B8B-C892-4730-A859-23FB40E068F2}</Project>
       <Name>CustomButton</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CustomPicButton\CustomPicButton.csproj">
+      <Project>{4AACA480-7212-424C-975F-B6BC70C8100D}</Project>
+      <Name>CustomPicButton</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_新增連線3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WP_單軸系統.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
