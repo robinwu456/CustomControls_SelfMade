@@ -10,24 +10,27 @@ using System.Windows.Forms;
 namespace CustomButton {
     [DefaultEvent("Click")]
     public partial class CustomButton : UserControl {
+        private Color _BackColor_Normal;        
         public Color BackColor_Normal {
             get {
-                return customPanelBtnBg.BackColor;
+                return _BackColor_Normal;
             }
             set {
-                customPanelBtnBg.BackColor = value;
+                _BackColor_Normal = value;
+                customPanelBtnBg.BackColor = _BackColor_Normal;
                 if (this.DesignMode == true) {
                     this.Invalidate();
                 }
             }
         }
-
+        private Color _BackColor2_Normal;
         public Color BackColor2_Normal {
             get {
-                return customPanelBtnBg.BackColor2;
+                return _BackColor2_Normal;
             }
             set {
-                customPanelBtnBg.BackColor2 = value;
+                _BackColor2_Normal = value;
+                customPanelBtnBg.BackColor2 = _BackColor2_Normal;
                 if (this.DesignMode == true) {
                     this.Invalidate();
                 }
@@ -39,6 +42,9 @@ namespace CustomButton {
 
         public Color BackColor_Press { get; set; } = Color.FromArgb(64, 60, 60);
         public Color BackColor2_Press { get; set; } = Color.FromArgb(64, 60, 60);
+
+        public Color BackColor_Disabled = Color.FromArgb(210, 210, 210);
+        public Color BackColor2_Disabled = Color.FromArgb(210, 210, 210);
 
         [DefaultValueAttribute(typeof(LinearGradientMode), "None"), CategoryAttribute("Appearance"), DescriptionAttribute("The gradient direction used to paint the control.")]
         public LinearGradientMode GradientMode {
@@ -142,6 +148,7 @@ namespace CustomButton {
             }
         }
 
+        [Localizable(true)]
         public string ButtonText {
             get {
                 return lbBtnText.Text;
@@ -151,6 +158,24 @@ namespace CustomButton {
                 if (this.DesignMode == true) {
                     this.Invalidate();
                 }
+            }
+        }
+
+        public bool ButtonEnabled {
+            get {
+                return customPanelBtnBg.Enabled;
+            }
+            set {
+                customPanelBtnBg.Enabled = value;
+                if (customPanelBtnBg.Enabled) {
+                    customPanelBtnBg.BackColor = _BackColor_Normal;
+                    customPanelBtnBg.BackColor2 = _BackColor2_Normal;
+                } else {
+                    customPanelBtnBg.BackColor = BackColor_Disabled;
+                    customPanelBtnBg.BackColor2 = BackColor2_Disabled;
+                }
+                if (this.DesignMode == true)
+                    this.Invalidate();
             }
         }
 
@@ -165,15 +190,18 @@ namespace CustomButton {
         }
 
         private void LbBtnText_Click(object sender, EventArgs e) {
-            OnClick(e);
+            if (ButtonEnabled)
+                OnClick(e);
         }
 
         private void LbBtnText_MouseUp(object sender, MouseEventArgs e) {
-            OnMouseUp(e);
+            if (ButtonEnabled)
+                OnMouseUp(e);
         }
 
         private void LbBtnText_MouseDown(object sender, MouseEventArgs e) {
-            OnMouseDown(e);
+            if (ButtonEnabled)
+                OnMouseDown(e);
         }
     }
 }

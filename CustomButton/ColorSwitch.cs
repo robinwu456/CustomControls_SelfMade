@@ -18,7 +18,7 @@ namespace CustomButton {
                 { ButtonStatus.Normal,   new Color[]{ customButton.BackColor_Normal, customButton.BackColor2_Normal } },  // 漸層左邊, 右邊
                 { ButtonStatus.Hover,    new Color[]{ customButton.BackColor_Hover, customButton.BackColor2_Hover } },
                 { ButtonStatus.Press,    new Color[]{ customButton.BackColor_Press, customButton.BackColor2_Press } },
-                { ButtonStatus.Disabled, new Color[]{ Color.FromArgb(210, 210, 210), Color.FromArgb(210, 210, 210) } },
+                { ButtonStatus.Disabled, new Color[]{ customButton.BackColor_Disabled, customButton.BackColor2_Disabled } },
             };
 
             customButton.lbBtnText.MouseEnter += Cmd_MouseEnter;

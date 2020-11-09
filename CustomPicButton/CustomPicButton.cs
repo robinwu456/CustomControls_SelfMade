@@ -179,14 +179,20 @@ namespace CustomPicButton {
         }
 
         private void PicBtn_Click(object sender, EventArgs e) {
+            if (!ButtonEnabled)
+                return;
             OnClick(e);
         }
 
         private void PicBtn_MouseUp(object sender, MouseEventArgs e) {
+            if (!ButtonEnabled)
+                return;
             OnMouseUp(e);
         }
 
         private void PicBtn_MouseDown(object sender, MouseEventArgs e) {
+            if (!ButtonEnabled)
+                return;
             OnMouseDown(e);
         }        
     }
