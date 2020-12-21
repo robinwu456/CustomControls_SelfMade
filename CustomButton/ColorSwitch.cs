@@ -15,7 +15,7 @@ namespace CustomButton {
             this.customButton = customButton;
 
             cmdColor = new Dictionary<ButtonStatus, Color[]>() {
-                { ButtonStatus.Normal,   new Color[]{ customButton.BackColor_Normal, customButton.BackColor2_Normal } },  // 漸層左邊, 右邊
+                { ButtonStatus.Normal,   new Color[]{ customButton._BackColor_Normal, customButton._BackColor2_Normal } },  // 漸層左邊, 右邊
                 { ButtonStatus.Hover,    new Color[]{ customButton.BackColor_Hover, customButton.BackColor2_Hover } },
                 { ButtonStatus.Press,    new Color[]{ customButton.BackColor_Press, customButton.BackColor2_Press } },
                 { ButtonStatus.Disabled, new Color[]{ customButton.BackColor_Disabled, customButton.BackColor2_Disabled } },
@@ -40,9 +40,11 @@ namespace CustomButton {
         }
 
         private void Cmd_MouseLeave(object sender, EventArgs e) {
-            customButton.customPanelBtnBg.BackColor = cmdColor[ButtonStatus.Normal][0];
-            customButton.customPanelBtnBg.BackColor2 = cmdColor[ButtonStatus.Normal][1];
-            customButton.customPanelBtnBg.Invalidate();
+            if (customButton.ButtonEnabled) {
+                customButton.customPanelBtnBg.BackColor = cmdColor[ButtonStatus.Normal][0];
+                customButton.customPanelBtnBg.BackColor2 = cmdColor[ButtonStatus.Normal][1];
+                customButton.customPanelBtnBg.Invalidate();
+            }
         }
 
         private void Cmd_MouseEnter(object sender, EventArgs e) {

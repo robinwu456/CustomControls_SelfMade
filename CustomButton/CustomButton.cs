@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace CustomButton {
     [DefaultEvent("Click")]
     public partial class CustomButton : UserControl {
-        private Color _BackColor_Normal;        
+        public Color _BackColor_Normal = Color.FromArgb(108, 108, 108);
         public Color BackColor_Normal {
             get {
                 return _BackColor_Normal;
@@ -23,7 +23,7 @@ namespace CustomButton {
                 }
             }
         }
-        private Color _BackColor2_Normal;
+        public Color _BackColor2_Normal = Color.FromArgb(65, 62, 61);
         public Color BackColor2_Normal {
             get {
                 return _BackColor2_Normal;
@@ -174,7 +174,7 @@ namespace CustomButton {
                     customPanelBtnBg.BackColor = BackColor_Disabled;
                     customPanelBtnBg.BackColor2 = BackColor2_Disabled;
                 }
-                if (this.DesignMode == true)
+                //if (this.DesignMode == true)
                     this.Invalidate();
             }
         }
@@ -187,6 +187,21 @@ namespace CustomButton {
             lbBtnText.MouseUp += LbBtnText_MouseUp;
             lbBtnText.MouseDown += LbBtnText_MouseDown;
             lbBtnText.Click += LbBtnText_Click;
+        }
+
+        protected override void OnClick(EventArgs e) {
+            if (ButtonEnabled)
+                base.OnClick(e);
+        }
+
+        protected override void OnMouseDown(MouseEventArgs e) {
+            if (ButtonEnabled)
+                base.OnMouseDown(e);
+        }
+
+        protected override void OnMouseUp(MouseEventArgs e) {
+            if (ButtonEnabled)
+                base.OnMouseUp(e);
         }
 
         private void LbBtnText_Click(object sender, EventArgs e) {
