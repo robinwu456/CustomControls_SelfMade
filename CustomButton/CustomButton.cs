@@ -124,7 +124,7 @@ namespace CustomButton {
             }
         }
 
-        public new Font Font {
+        public Font TextFont {
             get {
                 return lbBtnText.Font;
             }
