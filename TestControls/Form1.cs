@@ -16,5 +16,10 @@ namespace TestControls {
         private void customButton1_Click(object sender, EventArgs e) {
             Console.WriteLine(1);
         }
+
+        private void Form1_Load(object sender, EventArgs e) {
+            customToggle1.Checked = true;
+            //customToggle1.Checked = false;
+        }
     }
 }

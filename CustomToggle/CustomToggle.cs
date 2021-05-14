@@ -10,17 +10,19 @@ using System.Windows.Forms;
 namespace CustomToggle {
     public partial class CustomToggle : UserControl {
         public Image BackImg_ToggleOn_Normal { get; set; }
-        public Image BackImg_ToggleOff_Normal {
-            get {
-                return picToggle.Image;
-            }
-            set {
-                this.Size = value.Size;
-                picToggle.Image = value;
-                if (this.DesignMode == true)
-                    this.Invalidate();
-            }
-        }
+        //public Image BackImg_ToggleOff_Normal {
+        //    get {
+        //        return picToggle.Image;
+        //    }
+        //    set {
+        //        this.Size = value.Size;
+        //        picToggle.Image = value;
+        //        if (this.DesignMode == true)
+        //            this.Invalidate();
+        //    }
+        //}
+        public Image BackImg_ToggleOff_Normal { get; set; }
+
         public Image BackImg_ToggleOn_Hover { get; set; }
         public Image BackImg_ToggleOff_Hover { get; set; }
         public Image BackImg_ToggleOn_Disabled { get; set; }
@@ -34,7 +36,7 @@ namespace CustomToggle {
                 _Checked = value;
                 if (BackImg_ToggleOn_Normal != null && BackImg_ToggleOff_Normal != null) {
                     picToggle.Image = _Checked ? BackImg_ToggleOn_Normal : BackImg_ToggleOff_Normal;
-                    if (this.DesignMode == true)
+                    //if (this.DesignMode == true)
                         this.Invalidate();
                 }
             }
