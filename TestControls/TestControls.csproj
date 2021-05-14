@@ -84,12 +84,34 @@
       <Project>{4AACA480-7212-424C-975F-B6BC70C8100D}</Project>
       <Name>CustomPicButton</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CustomToggle\CustomToggle.csproj">
+      <Project>{200DD5BE-4EE7-4B95-8592-4817CA667D83}</Project>
+      <Name>CustomToggle</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home_新增連線3.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WP_單軸系統.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggleOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggleOff_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggleOff_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggleOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggleOn_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggleOn_hover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="imgInfo1.BackImg_Disabled" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="imgInfo6.BackImg_Disabled" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAAjcSURBVFhHxVdpbFTXFeZfICSQBJJIEUJsTgI4rGExizFh
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAjcSURBVFhHxVdpbFTXFeZfICSQBJJIEUJsTgI4rGExizFh
         cdihZSmLEv9IaBSkRPmRBhKiVEIqVFSJGhEaauMNxwvesMH1APYsXsczY4/tGc947MGeGS/YHput1AVj
         3tfvPL9xLUJbUFX1SEfPnnfv+b6z3vtGPakc+vjjMGoM9RTVSPVT72kqf8tv8k7WhGnb/nuhsajffP55
         /JHDh28nJCT0G43Gh01NTbjR14cHDx6oKn/Lb/JO1sha2SN7NTNPL9w87ejRoz/+/sSJWwaD4WFvMKgE
@@ -162,10 +162,10 @@
         //Nx+qjQ2P/g83zUqH8A1mBpgSs+9D0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="imgInfo1.BackImg_Hover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="imgInfo6.BackImg_Hover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAAjcSURBVFhHxVdpbFTXFeZfICSQBJJIEUJsTgI4rGExizFh
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAjcSURBVFhHxVdpbFTXFeZfICSQBJJIEUJsTgI4rGExizFh
         cdihZSmLEv9IaBSkRPmRBhKiVEIqVFSJGhEaauMNxwvesMH1APYsXsczY4/tGc947MGeGS/YHput1AVj
         3tfvPL9xLUJbUFX1SEfPnnfv+b6z3vtGPakc+vjjMGoM9RTVSPVT72kqf8tv8k7WhGnb/nuhsajffP55
         /JHDh28nJCT0G43Gh01NTbjR14cHDx6oKn/Lb/JO1sha2SN7NTNPL9w87ejRoz/+/sSJWwaD4WFvMKgE
@@ -206,10 +206,10 @@
         //Nx+qjQ2P/g83zUqH8A1mBpgSs+9D0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="imgInfo1.BackImg_Press" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="imgInfo6.BackImg_Press" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAAjcSURBVFhHxVdpbFTXFeZfICSQBJJIEUJsTgI4rGExizFh
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAjcSURBVFhHxVdpbFTXFeZfICSQBJJIEUJsTgI4rGExizFh
         cdihZSmLEv9IaBSkRPmRBhKiVEIqVFSJGhEaauMNxwvesMH1APYsXsczY4/tGc947MGeGS/YHput1AVj
         3tfvPL9xLUJbUFX1SEfPnnfv+b6z3vtGPakc+vjjMGoM9RTVSPVT72kqf8tv8k7WhGnb/nuhsajffP55
         /JHDh28nJCT0G43Gh01NTbjR14cHDx6oKn/Lb/JO1sha2SN7NTNPL9w87ejRoz/+/sSJWwaD4WFvMKgE
